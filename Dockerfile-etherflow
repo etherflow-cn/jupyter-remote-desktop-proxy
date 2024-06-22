@@ -1,9 +1,8 @@
+
 ARG VERSION
 ARG REGISTRY
 ARG JRD_BASE_IMAGE
-
 FROM ${REGISTRY}/${JRD_BASE_IMAGE}:${VERSION}
-
 USER root
 
 RUN apt-get -y -qq update \
